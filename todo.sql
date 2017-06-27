@@ -11,5 +11,7 @@ INSERT INTO todo (title, details, priority, created_at, completed_at) VALUES ('f
 INSERT INTO todo (title, details, priority, created_at, completed_at) VALUES ('Create example todos', 'details', 3, '2017-06-27 1:24', '2017-06-27 1:28');
 INSERT INTO todo (title, priority, created_at) VALUES ('Get shower', 2, '2017-06-27 1:24');
 INSERT INTO todo (title, details, priority, created_at) VALUES ('Pay Bill', 'Pay Suntrust bills', 2, '2017-06-26 8:30 PM');
+SELECT * FROM todo WHERE completed_at IS NULL;
+SELECT * FROM todo WHERE priority > 1;
 UPDATE todo SET completed_at = '2017-06-27 11:00' WHERE id = 5;
 DELETE FROM todo WHERE completed_at IS NOT NULL;
